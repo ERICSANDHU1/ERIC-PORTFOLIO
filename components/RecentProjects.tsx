@@ -81,9 +81,11 @@
 // };
 
 // export default RecentProjects;
+
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
@@ -101,21 +103,26 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title={item.pinTitle}
-              href={item.link}
-            >
+            <PinContainer title={item.pinTitle} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="bgimg"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <img
+
+                <Image
                   src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  alt={item.title}
+                  className="z-10 absolute bottom-0 object-contain"
+                  width={400} // Adjust width according to design
+                  height={250} // Adjust height according to design
                 />
               </div>
 
@@ -143,12 +150,21 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        src={icon}
+                        alt={`icon-${index}`}
+                        className="p-2"
+                        width={24}
+                        height={24}
+                      />
                     </div>
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center cursor-pointer" onClick={() => window.open(item.link, '_blank')}>
+                <div
+                  className="flex justify-center items-center cursor-pointer"
+                  onClick={() => window.open(item.link, "_blank")}
+                >
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Github Repo
                   </p>

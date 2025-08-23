@@ -1,4 +1,7 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
@@ -12,15 +15,15 @@ const Footer = () => {
           presence to the next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5">
-          Reach out to me today and let's discuss how I can help you achieve your goals.
+          Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
         </p>
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=sandhue098@gmail.com&su=Let's%20Connect&body=Hi%20Eric,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=sandhue098@gmail.com&su=Let&apos;s%20Connect&body=Hi%20Eric,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
           target="_blank"
           rel="noopener noreferrer"
         >
           <MagicButton
-            title="Let's get in touch"
+            title="Let&apos;s get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />
@@ -43,7 +46,13 @@ const Footer = () => {
               aria-label={info.name}
               className="w-10 h-10 flex justify-center items-center cursor-pointer backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transition-transform hover:scale-105"
             >
-              <img src={info.img} alt={info.name} width={20} height={20} />
+              <Image
+                src={info.img}
+                alt={info.name}
+                width={20}
+                height={20}
+                className="object-contain"
+              />
             </a>
           ))}
         </div>
