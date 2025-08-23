@@ -6,6 +6,20 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
+  const openContact = () => {
+    const gmailApp = "googlegmail://co?to=sandhue098@gmail.com&subject=Let's%20Connect&body=Hi%20Eric,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.";
+    const gmailWeb = "https://mail.google.com/mail/?view=cm&fs=1&to=sandhue098@gmail.com&su=Let's%20Connect&body=Hi%20Eric,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.";
+
+    const now = Date.now();
+    window.location.href = gmailApp;
+
+    setTimeout(() => {
+      if (Date.now() - now < 1500) {
+        window.open(gmailWeb, "_blank");
+      }
+    }, 1200);
+  };
+
   return (
     <footer className="w-full pt-10 mb-[100px]" id="contact">
       {/* Contact CTA */}
@@ -15,19 +29,18 @@ const Footer = () => {
           presence to the next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5">
-          Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
+          Reach out to me today and let&apos;s discuss how I can help you
+          achieve your goals.
         </p>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=sandhue098@gmail.com&su=Let&apos;s%20Connect&body=Hi%20Eric,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        {/* ✅ No button nesting */}
+        <div onClick={openContact} className="cursor-pointer">
           <MagicButton
-            title="Let&apos;s get in touch"
+            title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </div>
       </div>
 
       {/* Footer Bottom Bar */}
