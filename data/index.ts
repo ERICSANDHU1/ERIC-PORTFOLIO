@@ -71,6 +71,7 @@ export const gridItems = [
   {
     id: 1,
     featured: true,
+    live: true,
     title: "mrk18 — The AI CMO for Founders",
     des: "My flagship. An autonomous AI Chief Marketing Officer: drop a URL, get four honest verdicts — real competitors, positioning, funnel and ad audits. Built on a LangGraph agent system with a fine-tuned vLLM \"Brain\" (Qwen3-32B + 9 LoRA adapters) behind the paid tier.",
     img: "/mrk18.svg",
@@ -80,12 +81,13 @@ export const gridItems = [
   },
   {
     id: 2,
+    live: true,
     title: "🧠 AI Voice-Based Learning Assistant",
     des: "Built a voice-interactive AI web app offering mock interviews, guided meditation, topic lectures, language skill practice, and Q&A preparation.",
     img: "/p1.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", ],
-    link: "https://github.com/ERICSANDHU1/TALKWISE-AI",
-    pinTitle: "TALKWISEAI",
+    link: "https://talkwise-ai-phi.vercel.app",
+    pinTitle: "talkwise-ai",
   },
   {
     id: 3,
