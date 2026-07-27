@@ -91,21 +91,22 @@ export const gridItems = [
   },
   {
     id: 3,
+    live: true,
+    title: "Animated Portfolio - 3D Website",
+    des: "created the Professional Portfolio website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p3.png",
+    iconLists: ["/next.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
+    link: "https://three-d-portfolio-theta.vercel.app/",
+    pinTitle: "3D Portfolio",
+  },
+  {
+    id: 4,
     title: "Daydreaming Detection — CNN Facial Analysis",
     des: "A full-stack computer-vision system that reads facial cues from an uploaded image and classifies mental state — daydreaming, depressive cues, or focused. Next.js frontend, Flask API pipeline: contrast + resize preprocessing, face detection, and a weighted scoring of head yaw, tilt, gaze, eye and lip state, returned with a confidence score.",
     img: "/daydreaming.svg",
     iconLists: ["/next.svg", "/ts.svg", "/tail.svg"],
     link: "https://github.com/ERICSANDHU1/daydreaming-Analyzer",
     pinTitle: "daydreaming",
-  },
-  {
-    id: 4,
-    title: "Animated Portfolio - 3D Website",
-    des: "created the Professional Portfolio website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p3.png",
-    iconLists: ["/next.svg", "/tail.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/ERICSANDHU1/THREE.JS",
-    pinTitle: "3DPortfolio",
   },
 ];
 
