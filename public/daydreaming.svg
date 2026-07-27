@@ -1,0 +1,94 @@
+<svg width="760" height="480" viewBox="0 0 760 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daydreaming Detection System preview">
+  <defs>
+    <linearGradient id="ddBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12142b"/>
+      <stop offset="1" stop-color="#1b1740"/>
+    </linearGradient>
+    <linearGradient id="ddViolet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#7c5cf0"/>
+    </linearGradient>
+    <linearGradient id="ddScan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="ddSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- window -->
+  <rect x="8" y="8" width="744" height="464" rx="26" fill="url(#ddBg)"/>
+  <rect x="8.5" y="8.5" width="743" height="463" rx="25.5" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- top bar -->
+  <circle cx="44" cy="46" r="6" fill="#ff5f57"/>
+  <circle cx="66" cy="46" r="6" fill="#febc2e"/>
+  <circle cx="88" cy="46" r="6" fill="#28c840"/>
+  <rect x="286" y="34" width="188" height="24" rx="12" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="380" y="50" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#9a93c7" text-anchor="middle">daydreaming-detection</text>
+
+  <!-- title -->
+  <text x="44" y="104" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#f4f2ff">🧠 Daydreaming Detection</text>
+  <text x="44" y="130" font-family="Arial, sans-serif" font-size="13.5" fill="#8f88bd">Upload a face · we read the cues · classify the state</text>
+
+  <!-- left: face-scan panel -->
+  <g filter="url(#ddSoft)">
+    <rect x="44" y="152" width="300" height="280" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.10"/>
+  </g>
+  <!-- head silhouette -->
+  <g transform="translate(194,300)">
+    <ellipse cx="0" cy="0" rx="70" ry="88" fill="#26224d"/>
+    <ellipse cx="0" cy="-6" rx="58" ry="74" fill="#2f2a5e"/>
+    <!-- landmarks -->
+    <g fill="#a78bfa">
+      <circle cx="-26" cy="-18" r="3.4"/>
+      <circle cx="26" cy="-18" r="3.4"/>
+      <circle cx="0" cy="6" r="3.4"/>
+      <circle cx="-22" cy="34" r="3.4"/>
+      <circle cx="22" cy="34" r="3.4"/>
+      <circle cx="0" cy="44" r="3.4"/>
+      <circle cx="-40" cy="0" r="3"/>
+      <circle cx="40" cy="0" r="3"/>
+    </g>
+    <path d="M-26 -18 L26 -18 M0 6 L0 44 M-22 34 Q0 48 22 34" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1.4" fill="none"/>
+  </g>
+  <!-- scan line -->
+  <rect x="126" y="224" width="136" height="150" fill="url(#ddScan)" opacity="0.6"/>
+  <rect x="126" y="372" width="136" height="2.5" fill="#a78bfa"/>
+
+  <!-- right: results panel -->
+  <g filter="url(#ddSoft)">
+    <rect x="368" y="152" width="344" height="280" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.10"/>
+  </g>
+  <text x="392" y="186" font-family="Arial, sans-serif" font-size="12" letter-spacing="1.4" font-weight="700" fill="#8f88bd">PREDICTION</text>
+
+  <!-- primary result -->
+  <text x="392" y="224" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#f4f2ff">Daydreaming</text>
+  <rect x="392" y="240" width="296" height="12" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="392" y="240" width="242" height="12" rx="6" fill="url(#ddViolet)"/>
+  <text x="688" y="222" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#a78bfa" text-anchor="end">82%</text>
+
+  <!-- secondary bars -->
+  <g font-family="Arial, sans-serif" font-size="13" fill="#c9c4ef">
+    <text x="392" y="290">Focused</text>
+    <rect x="392" y="298" width="296" height="9" rx="4.5" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="392" y="298" width="36" height="9" rx="4.5" fill="#6d64b8"/>
+    <text x="688" y="290" text-anchor="end" fill="#8f88bd">12%</text>
+
+    <text x="392" y="332">Depressive cues</text>
+    <rect x="392" y="340" width="296" height="9" rx="4.5" fill="#ffffff" fill-opacity="0.08"/>
+    <rect x="392" y="340" width="18" height="9" rx="4.5" fill="#6d64b8"/>
+    <text x="688" y="332" text-anchor="end" fill="#8f88bd">6%</text>
+  </g>
+
+  <!-- feature chips -->
+  <g font-family="Arial, sans-serif" font-size="11" fill="#b7b1e6">
+    <rect x="392" y="372" width="86" height="26" rx="13" fill="#a78bfa" fill-opacity="0.14"/>
+    <text x="435" y="389" text-anchor="middle">yaw · gaze</text>
+    <rect x="486" y="372" width="70" height="26" rx="13" fill="#a78bfa" fill-opacity="0.14"/>
+    <text x="521" y="389" text-anchor="middle">eye state</text>
+    <rect x="564" y="372" width="88" height="26" rx="13" fill="#a78bfa" fill-opacity="0.14"/>
+    <text x="608" y="389" text-anchor="middle">head tilt</text>
+  </g>
+</svg>

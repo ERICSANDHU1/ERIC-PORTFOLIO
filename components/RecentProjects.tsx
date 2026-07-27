@@ -105,6 +105,12 @@ const RecentProjects = () => {
           >
             <PinContainer title={item.pinTitle} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                {"featured" in item && item.featured && (
+                  <span className="absolute top-3 left-3 z-20 flex items-center gap-1.5 rounded-full border border-purple/40 bg-black/60 px-3 py-1 text-xs font-semibold text-purple backdrop-blur-sm">
+                    <span className="h-1.5 w-1.5 rounded-full bg-purple animate-pulse" />
+                    Flagship · Live
+                  </span>
+                )}
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
