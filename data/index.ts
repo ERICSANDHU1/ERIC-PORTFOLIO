@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I build autonomous AI agents that orchestrate LLMs and fine-tuned SLMs into products that ship.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Fast, async, and flexible across time zones",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My AI & web stack",
+    description: "Always leveling up",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "AI engineer with a founder's obsession for shipping.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,8 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building AI Voice-Based Learning Assistant",
-    description: "Built a voice-interactive AI web app ",
+    title: "Currently building mrk18 — an autonomous AI CMO",
+    description: "A multi-agent system with a fine-tuned vLLM brain",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Want to build something intelligent together?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -179,29 +179,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "HTML, CSS & JavaScript Foundations",
-    desc: "Built personal projects to understand the core concepts of semantic HTML, responsive CSS, and vanilla JavaScript interactions.",
+    title: "Full-Stack Web Foundations",
+    desc: "Started with semantic HTML, responsive CSS, and JavaScript — then went full-stack with the MERN stack, building REST APIs and CRUD apps end to end.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "MERN Stack Development",
-    desc: "Created full-stack applications using MongoDB, Express.js, React.js, and Node.js to understand API development and CRUD operations.",
-    className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Next.js & Framer Motion",
-    desc: "Explored server-side rendering and dynamic routing in Next.js. Integrated Framer Motion to add smooth animations and transitions to the UI.",
+    title: "Modern Frontend — Next.js, Three.js & Motion",
+    desc: "Shipped fast, interactive UIs with Next.js (App Router + SSR), immersive 3D via Three.js, and fluid animation with Framer Motion and GSAP.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
+    id: 3,
+    title: "LLMs & Agentic AI",
+    desc: "Went deep on LLMs and SLMs — LangGraph multi-agent systems, RAG, tool-calling, and fine-tuning small models with LoRA served on vLLM.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
     id: 4,
-    title: "Creative Web with Three.js & GSAP",
-    desc: "Developed interactive 3D experiences and scroll animations using Three.js and GSAP to build immersive portfolio and landing pages.",
+    title: "Building mrk18 — Autonomous AI CMO",
+    desc: "Shipped a production multi-agent product: a FastAPI + LangGraph backend and a fine-tuned Qwen3-32B \"Brain\" (9 LoRA adapters) served via vLLM.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

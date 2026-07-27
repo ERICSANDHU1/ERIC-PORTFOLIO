@@ -42,16 +42,16 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Crafting Modern, Scalable Web Experiences with Next.js
+            AI Agents · LLMs · SLMs · Full-Stack AI
           </p>
 
           <TextGenerateEffect
-            words="Transforming AI Concepts into Scalable, User-Centric Web Solutions"
+            words="Building Autonomous AI Agents with LLMs and Fine-Tuned SLMs"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Eric Sandhu – building fast, interactive sites with Next.js and Three.js, straight out of Greater Noida.
+            Hi, I&apos;m Eric Sandhu — founder of mrk18. I design agentic systems, fine-tune small language models, and ship full-stack AI products from Greater Noida.
           </p>
 
           <a href="#about">
